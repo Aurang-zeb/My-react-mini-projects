@@ -1,0 +1,53 @@
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 100;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .about-page h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-page h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 40px;
+  }
+  
+  .about-page p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-page ul {
+    list-style: disc;
+    margin-left: 30px;
+  }
+  
+  .about-page li {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
