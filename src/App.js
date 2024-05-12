@@ -1,25 +1,21 @@
-import React from 'react';
-import Home from './Home';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import About from './About'; // Assuming you have an About component
-import Trechi from './Trechi';
-import Lux from './Lux';
-import Swiss from './Swiss';
-import {Routes,Route } from 'react-router-dom';
+import { useState } from "react";
+
+
 function App() {
+   
+const [color,setcolor]=useState('#000000')
+ const colorchange=(e)=>{
+  setcolor(e.target.value)
+ }
+
   return (
-      <div className="App">
-        <Navbar />
-        <Routes>
-         <Route path='/' element={<Home/>}/>  
-         <Route path='about' element={<About/>}/>
-         <Route path='Trechi' element={<Trechi/>}/>
-         <Route path='Lux' element={<Lux title="Luxemberg Trams"/>}/>
-         <Route path='Swiss' element={<Swiss/>}/>
-        </Routes>
-        <Footer />
+      <>
+      <h1>Color Picker</h1>
+      <input type="color" value={color} onChange={colorchange} />
+      <div style={{width:'100px',height:'300px'}}>
       </div>
+      <p>Selected Color {color} </p>
+      </>
   );
 }
 
