@@ -1,0 +1,10 @@
+.container{
+    background-color:white;
+    padding: 10px;
+}
+.on{
+    background-color: yellow;
+}
+.off{
+    background-color: rgb(240, 232, 232);
+}
